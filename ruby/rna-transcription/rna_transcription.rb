@@ -17,6 +17,9 @@ class Complement
         rna.push 'A'
       when 'A'
         rna.push 'U'
+      else
+        rna = []
+        break
       end
 
     end
