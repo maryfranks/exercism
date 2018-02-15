@@ -4,8 +4,10 @@ class Raindrops
 
     if number % 3 == 0 && number % 5 == 0
       return "PlingPlang"
-    elsif number % 3 == 0 and number % 7 == 0
+    elsif number % 3 == 0 && number % 7 == 0
       return "PlingPlong"
+    elsif number % 5 == 0 && number % 7 == 0
+      return "PlangPlong"
     elsif number % 3 == 0
       return "Pling"
     elsif number % 5 == 0
