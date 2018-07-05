@@ -1,5 +1,11 @@
 class Twofer {
     String twofer(String name) {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+      if (name != null) {
+        String output = String.format("One for %s, one for me.", name);
+        return output;
+    } else {
+        return "One for you, one for me.";
+    }
+
     }
 }
