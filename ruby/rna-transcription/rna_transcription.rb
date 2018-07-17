@@ -1,28 +1,24 @@
 class Complement
 
-  def self.of_dna (nucleotide)
+  DNA_TO_RNA = {
+    'C' => 'G', 'G' => 'C', 'T' => 'A', 'A' => 'U'
+  }
+
+  def self.of_dna(nucleotide)
 
     rna = []
 
-    nucleotide.split(//).each do | letter |
-
-      case letter
-      when 'C'
-        rna.push 'G'
-      when 'G'
-        rna.push 'C'
-      when 'T'
-        rna.push 'A'
-      when 'A'
-        rna.push 'U'
+    nucleotide.split(//).each do |letter|
+      if DNA_TO_RNA.has_key?(letter)
+        new = DNA_TO_RNA[letter]
+        rna.push(new)
       else
         rna = []
         break
       end
-
     end
 
-    return rna.join
+    rna.join
 
   end
 
