@@ -4,7 +4,7 @@ class Gigasecond
 
   def self.from (time)
 
-    return time + GIGASECOND
+    time + GIGASECOND
 
   end
 
