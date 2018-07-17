@@ -1,8 +1,10 @@
 class Gigasecond
 
+  GIGASECOND = 1000000000
+
   def self.from (time)
 
-    return time + 1000000000
+    return time + GIGASECOND
 
   end
 
