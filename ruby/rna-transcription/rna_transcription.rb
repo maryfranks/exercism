@@ -8,13 +8,12 @@ class Complement
 
     rna = []
 
-    nucleotide.split(//).each do |letter|
-      if DNA_TO_RNA.has_key?(letter)
-        new = DNA_TO_RNA[letter]
-        rna.push(new)
-      else
+    nucleotide.chars.each do |letter|
+      if !DNA_TO_RNA.has_key?(letter)
         rna = []
         break
+      else
+        rna.push(DNA_TO_RNA[letter])
       end
     end
 
