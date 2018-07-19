@@ -2,23 +2,14 @@ class Raindrops
 
   def self.convert (number)
 
-    if number % 3 == 0 && number % 5 == 0 && number % 7 == 0
-      return "PlingPlangPlong"
-    elsif number % 3 == 0 && number % 5 == 0
-      return "PlingPlang"
-    elsif number % 3 == 0 && number % 7 == 0
-      return "PlingPlong"
-    elsif number % 5 == 0 && number % 7 == 0
-      return "PlangPlong"
-    elsif number % 3 == 0
-      return "Pling"
-    elsif number % 5 == 0
-      return "Plang"
-    elsif number % 7 == 0
-      return "Plong"
-    else
-      return number.to_s
-    end
+    return "PlingPlangPlong"  if number % 3 == 0 && number % 5 == 0 && number % 7 == 0
+    return "PlingPlang"       if number % 3 == 0 && number % 5 == 0
+    return "PlingPlong"       if number % 3 == 0 && number % 7 == 0
+    return "PlangPlong"       if number % 5 == 0 && number % 7 == 0
+    return "Pling"            if number % 3 == 0
+    return "Plang"            if number % 5 == 0
+    return "Plong"            if number % 7 == 0
+    return number.to_s
 
   end
 
