@@ -7,6 +7,9 @@ class RaindropConverter {
       else if (number % 7 == 0 & number % 3 == 0) {
         return "PlingPlong";
       }
+      else if (number % 7 == 0 & number % 5 == 0) {
+        return "PlangPlong";
+      }
       else if (number % 3 == 0) {
         return "Pling";
       }
