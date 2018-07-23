@@ -1,7 +1,10 @@
 class RaindropConverter {
 
     String convert(int number) {
-      if (number % 5 == 0 & number % 3 == 0) {
+      if (number % 7 == 0 & number % 5 == 0 & number % 3 == 0) {
+        return "PlingPlangPlong";
+      }
+      else if (number % 5 == 0 & number % 3 == 0) {
         return "PlingPlang";
       }
       else if (number % 7 == 0 & number % 3 == 0) {
