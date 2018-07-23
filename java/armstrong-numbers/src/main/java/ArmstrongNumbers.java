@@ -2,8 +2,9 @@ class ArmstrongNumbers {
 
 	boolean isArmstrongNumber(int numberToCheck) {
 
-		double powered = Math.pow(numberToCheck, 1);
-		double multiplied = numberToCheck * 1;
+		int length = String.valueOf(numberToCheck).length();
+		double powered = Math.pow(numberToCheck, length);
+		double multiplied = numberToCheck * length;
 
 		if (numberToCheck == powered & numberToCheck == multiplied) {
 			return true;
